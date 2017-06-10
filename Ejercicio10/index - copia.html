@@ -1,0 +1,94 @@
+<html>
+<head><title>Fondos y Bordes</title>
+<meta charset="UTF-8"/>
+<style>
+div.fondo
+  {
+  margin:auto;
+  width:500px;
+  height:250px;
+  background:url(../img/madera.jpg);
+  
+  background-size:100% 100%;
+  
+  border:2px solid black;
+  border-radius: 40px;
+  box-shadow:10px 10px 5px gray;  
+  }
+  
+/*div.fondo:hover
+  {
+    background-size:50px;
+	 
+  }*/
+  
+  div.fondo_interior   
+  {
+  background:url(../img/A10.jpg);
+  width:400px;
+  height:180px;
+   border:1px solid black;
+  border-radius: 25px;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 35px;
+  margin-bottom:35px;
+  }
+  
+div.medio
+  {
+
+  width:400px;
+  height:180px; /* bajamos de 200 a 180 para compensar los 20px de padding-top */
+  
+  margin-left:0px;
+  margin-right:0px;
+  margin-top: 0px;
+  margin-bottom:0px;
+  
+ /* padding-top:20px;*/ /* permite la alineación vertical del texto */
+  border:1px solid black;
+  background:rgba(255,255,255,0.6);
+  
+  border-radius: 25px;
+  }
+  
+  
+  
+div.frente h2
+  {
+  font-weight:bold;
+  color:#000000;
+  text-align: center;
+  }
+.encabezado
+{
+  font-style:italic;
+  text-decoration: underline;
+  color: gray;
+}
+</style>
+</head>
+
+<body>
+
+
+
+
+<div class="fondo">
+	<div class="fondo_interior">
+	<div class="medio">
+	
+		<div class="frente">
+			<h2>yuri</h2>
+			<h2>y</h2>
+			<h2>Miguel</h2>
+		</div> <!--frente-->
+	</div> <!--medio-->
+	</div>
+</div> <!--fondo-->
+<br/>
+
+ 
+</body>
+</html>

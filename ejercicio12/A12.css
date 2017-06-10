@@ -1,0 +1,96 @@
+#carta
+{
+margin:50px;
+}
+#carta h1
+{
+text-align: center;
+font-family: "Times New Roman", Times, serif;
+letter-spacing: 0.5em;
+word-spacing: 1em;
+text-decoration:underline;
+text-transform: uppercase;
+color: orange;
+font-size:1em;
+}
+
+#remitente ::first-line
+{
+font-weight:bold;
+}
+
+
+#remitente
+{
+text-align: right;
+}
+#destinatario ::first-line
+{
+font-weight:bold;
+}
+
+#destinatario
+{
+font-family: "Courier New", Courier, monospace;
+color:blue;
+}
+#fecha
+{
+font-style:italic;
+text-align: right;
+text-decoration:underline;
+color:red;
+}
+#saludo
+{
+font-style:italic;
+font-family: "Verdana", Verdana, monospace;
+color:olive;
+font-size:1.2em;
+
+}
+#cuerpo
+{
+font-family: Arial, Helvetica, sans-serif;
+}
+#cuerpo em
+{
+font-family: Arial, Helvetica, sans-serif;
+text-decoration:underline;
+}
+.destacado
+{
+text-decoration:underline;
+color:red;
+}
+#cuerpo a
+{
+font-weight:bold;
+text-decoration:underline;
+color:grey;
+}
+#despedida
+{
+font-family: "Verdana", Verdana, monospace;
+text-transform:capitalize;
+color:orange;
+font-size:1em;
+font-style:italic;
+word-spacing: 1em;
+}
+#firma
+{
+
+background: url('../img/firmaa.gif');
+
+height:40px;
+background-repeat:no-repeat;
+background-position:right;
+
+}
+.firmado
+{
+text-align: right;
+font-family: "Courier New", Courier, monospace;
+font-size:1em;
+}

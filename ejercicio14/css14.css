@@ -1,0 +1,99 @@
+table{
+background: url("../img/ies.gif");
+border:5px double #00008B;
+background-repeat:no-repeat;
+background-size:100%;
+background-position:center;
+/*border-radius:20px;*/
+box-shadow: 10px 10px 2px black;
+margin-left: auto;
+margin-right:auto;
+border-collapse:collapse;
+
+
+
+
+}
+h1{
+color:#00008B;
+text-align: center;
+}
+
+tr
+{
+opacity: .80;
+
+}
+th
+{
+border:2px solid #00008B;
+background:grey;
+
+}
+
+
+td{border:2px solid blue; background:lightblue; text-align:center; color: #00008B;}
+
+table th:first-child
+{
+
+font-family: "Courier New", Courier, monospace;
+font-weight:bold;
+}
+
+#recreo
+{
+background:grey;
+border-color: #00008B;
+border-style: solid;
+text-align:center;
+}
+
+
+tr:hover  td  , tr:hover th ,tr:hover  #recreo
+{
+background:blue; 
+color:white;
+}
+
+td:hover , th:hover
+{
+border-color: lightblue;
+border-style: double;
+background:black!important;
+color:red!important;}
+
+h2{
+color:green;
+text-align:center;
+}
+
+legend{
+color:green;
+}
+
+option{
+color:olive;
+}
+
+fieldset
+{
+border-color:yellow;
+color:blue;
+background:silver;
+}
+select, input{
+border-color:yellow;
+background-color:lightblue ;
+border-radius:5px;
+}
+input:hover , select:hover{
+background-color:orange ;
+}
+
+input:focus , select:focus{
+background-color:purple ;
+}
+option:hover{
+background-color:red;
+}

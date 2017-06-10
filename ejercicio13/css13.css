@@ -1,0 +1,178 @@
+@keyframes tiembla{
+    0%  { transform:rotateZ(0deg); }
+    25% { transform:rotateZ( -2deg)  }
+	50%  { transform:rotateZ(0deg); }
+    75%{ transform:rotateZ( 2deg)  }
+	100%  { transform:rotateZ(0deg); }
+}
+
+@-webkit-keyframes tiembla{
+    0%  { -webkit-transform:rotateZ(0deg); }
+    25% { -webkit-transform:rotateZ( -2deg)  }
+	50%  { -webkit-transform:rotateZ(0deg); }
+    75%{ -webkit-transform:rotateZ( 2deg)  }
+	100%  { -webkit-transform:rotateZ(0deg); }
+}
+
+@keyframes ColorEnMovimiento
+{
+0%   {color:red;}
+50%   {color:orange;}
+100% {color:red;}
+}
+
+@-webkit-keyframes ColorEnMovimiento
+{
+0%   {color:red;}
+50%   {color:orange;}
+100% {color:red;}
+}
+
+@-ms-keyframes ColorEnMovimiento
+{
+0%   {color:red;}
+50%   {color:orange;}
+100% {color:red;}
+}
+
+
+@keyframes oso{
+0%   {position:relative; left:0%;}
+50%   {position:relative; left:70%;}
+100%   {position:relative; left:0%;}
+}
+@-webkit-keyframes oso{
+0%   {position:relative; left:0% ;}
+50%   {position:relative; left:70% ;}
+100%   {position:relative; left:0% ;}
+}
+
+@keyframes nevera
+{
+
+0%   {position:relative; margin:top:0% ;}
+50%   {position:relative; margin-top:70% ; }
+100%   {position:relative; margin-top:0% ; }
+}	
+
+@-webkit-keyframes nevera
+{
+
+0%   {position:relative; margin:top:0% ;}
+50%   {position:relative; margin-top:70% ; }
+100%   {position:relative; margin-top:0% ; }
+}	
+	
+	body{
+	background-image: url('../img/rio.JPG');
+	background-size:cover;
+	
+	
+	height:500px;
+	overflow-y:hidden;
+	  
+	}
+		
+		#cabecera{
+		position:relative;  top: 10px;
+		margin-left:auto;
+		margin-right:auto;
+		background-image:url('../img/mad.JPG');
+		height:100px;
+		text-align:center;
+		width:60%;
+		border-radius:60px;
+		box-shadow: 5px 5px 2px black;
+		
+		color: white;
+		animation: tiembla 20s infinite;
+		-webkit-animation: tiembla 20s infinite;
+		
+		
+		}
+		
+		#cabecera h1{
+		
+		 padding-top:20px;
+		
+		 font-size:50px;
+		 text-shadow: 
+					  0.1em 0.1em 0.1em orange,
+					  0.2em -0.3em 0.1em yellow;
+		animation:ColorEnMovimiento linear infinite 4s;			  
+		-webkit-animation:ColorEnMovimiento linear infinite 4s;	
+		-ms-animation:ColorEnMovimiento linear infinite 4s;
+			  
+		 
+		}
+		
+		#cabecera h1::first-letter{
+		
+		
+		color:purple;
+		
+		}
+		
+		
+		
+		#cuerpo{
+		
+		
+		position:relative;  top: 6%; margin-right:20px;
+		animation: oso 20s infinite;
+		-webkit-animation: oso 20s infinite;
+		width:225px;
+		height:275px;
+		background-image: url('../img/osoborracho.png');
+		background-position:center;
+		background-size:90%;
+		background-repeat:no-repeat;
+		
+		 }
+		#cuerpo h1{
+		margin-left:-40px;
+		/*margin-top:-75px;*/
+		
+		color:blue;
+		background-color:yellow;
+		width:100px;
+		padding:10px;
+		border-radius:20px;
+		border-bottom-right-radius:0px;
+		font-size:15px;
+		
+		}
+		
+		
+		#cuerpo h1::first-line{
+		
+		color:yellow;
+		background:blue;
+
+		}
+		
+		#pie{
+		
+		background-image: url('../img/minibar.png');
+		width:400px;
+		height:225px;
+		background-size:90%;
+		position:relative;  top: -40%; margin-right:20px;
+		animation: nevera 20s infinite;
+		-webkit-animation: nevera 20s infinite;
+		}
+		#pie h1{
+			
+			color:purple;
+			
+			
+			
+		}
+		
+		
+		
+			
+		
+		
+		
+	

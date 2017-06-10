@@ -1,0 +1,128 @@
+@keyframes navegadores
+{
+0%   {position:relative; left:0%;}
+50%   {position:relative; left:45% }
+100%   {position:relative; left:0%}
+}
+
+@-webkit-keyframes navegadores
+{
+0%   {-webkit-position:relative; left:0%;}
+50%   {-webkit-position:relative; left:45% }
+100%   {-webkit-position:relative; left:0%}
+}
+
+body {
+	background-image: url('./img/fondo.bmp');
+	scrollbar-face-color: #9900CC;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-3dlight-color: #9966CC;
+	scrollbar-darkshadow-color: #330033;
+	scrollbar-shadow-color: #660066;
+	scrollbar-arrow-color: #FF9900;
+	scrollbar-track-color: #0099FF;
+	
+	}
+
+	iframe {
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background-color:silver;
+	
+	border-color:purple;
+	 display: block;
+    width: 85%;
+    height: 70%;
+    margin: 0 auto;
+	border-style: groove;
+    border-width: .5em;
+	opacity: .90;
+	position:relative;  top: -15px; 
+	box-shadow: 10px 10px 2px black;
+	}
+	h1, a
+	{
+	color: #FFFFFF;
+	transition: transform 3s;
+	}
+	
+	#menu{
+	width:70%;
+	position:relative; margin-left:auto; margin-top: -20px; margin-right:auto;
+	 /*padding:5px,5px,2px,0px;*/
+	 background-color:silver;
+	
+	}
+	
+	#menu ul{
+	margin-right:auto;
+	margin-left:auto;
+	border-radius: 5 px;
+	border-bottom: yellow, 2px,solid;
+	
+	}
+	
+	
+	
+	
+	
+	#menu ul li
+	{
+	
+	display:  inline;
+	margin-left: 5px;
+	
+	border-color: yellow;
+	border-style: double;
+	font-size: 20px;
+	background: purple;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding:3px;
+	
+}
+
+	#menu ul li:hover
+	{
+	
+	background-color:yellow;
+	 
+	}
+	
+	#menu ul li:target
+	{
+	background-color:blue;
+	}
+	
+	
+	#nav{
+	position:relative; left:0px; top: 0px;
+	animation: navegadores linear infinite 20s;
+	-webkit-animation:navegadores linear infinite 20s;
+	 width: 60%;
+	
+	 }
+	
+	#nav ul li {
+	 display:  inline;
+	}
+	#nav ul li img {
+		width: 75px;
+		height: 75px;
+	}
+	
+		a:link 
+			{color:pink; }
+		a:visited
+			{color:#FFFFFF;}
+		a:hover
+			{color:purple; background:yellow; transform: rotate(180deg) ; }
+		a:active
+			{color:yelow; background:blue;}
+			
+		a:focus
+		{
+			
+			{color:yellow; background:blue;}
+		}	

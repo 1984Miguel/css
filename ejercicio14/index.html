@@ -1,0 +1,128 @@
+﻿
+<html>
+
+<head>
+
+
+
+<link rel="stylesheet" type="text/css" href="css14.css" />
+
+<title> Actividad 14 </title>
+</head>
+<body>
+
+
+
+	<h2> Rellena tu CV </h2>
+	
+	<fieldset>
+		<legend> Datos personales</legend>
+		
+		<form action="procesar.php" metdod="post">
+		<label for="pv" > Provincia</label>
+		<select id="pv">
+		<option value="" selected="selected" id="provincia"> selecciona </option>
+		<option value="Madrid" > Madrid </option>
+		<option value="Barcelona" > Barcelona </option>
+		<option value="Bilbao" > Bilbao </option>
+		<option value="Salamanca" > Salamanca </option>
+		<select>
+		
+		
+		<label> Fecha de nacimiento</label>
+		<br />
+		<input type="Text" size="2">
+		<label>de</label>
+
+		<select for="mes" id="selecciona">
+		<option value="Enero" selected="selected"> Enero </option>
+		<option value="Febrero"> Febrero </option>	
+		<option value="Marzo"> Marzo </option>	
+		<option value="Abril"> Abril </option>
+		</select>
+		<label> de</label>
+		<input type="text" size="4">
+		
+		
+		<label> Temas de interés</label>
+		<br />
+		<select size="5">
+		<option value="Adatos">Administracion de base de datos</option>
+		<option value="Ayp">Analisis y programacion</option>
+		<option value="Ar">Arquitectura</option>
+		<option value="cal">Calidad</option>
+		<option value="erp">ERP,CRM,Business Intelligence</option>
+		
+		</select>
+		
+		
+		
+	</fieldset>	
+	</form>
+								
+		<caption><h1>HORARIO DE CLASES</h1></caption>
+
+<table id ="tabla">
+	<TR>
+		<th >&nbsp;</th>
+		<th >Lunes </th>
+		<th >Martes </th>
+		<th >Miercoles </th>
+		<th >Jueves </th>
+		<th> Viernes </th>
+	</Tr>
+
+	<TR>
+		<th >8:30 A 9:25</th>
+		<td rowspan="2" >PROGRAMACION</td>
+		<td rowspan="2" >F.O.L </td>
+		<td rowspan="2" >PROGRAMACION </td>
+		<td rowspan="2" >BASE DE DATOS</td>
+		<td rowspan="2" >PROGRAMACION</td>
+	</tr>	
+
+	<TR>	
+		<th >9:25 A 10:20</th>
+	</tr>
+
+	<TR>	
+		<th >10:20 A 11:15</th>
+		<td >F.O.L </td>
+		<td >SISTEMAS INFORMATICOS</td>
+		<td >ENTORNOS DE DESARROLLO</td>
+		<td >SISTEMAS INFORMATICOS</td>
+		<td >SISTEMAS INFORMATICOS</td>
+	</tr>
+
+	<TR>
+		<th >11:15 A 11:40</th>
+		<td colspan="5" id="recreo">RECREO</td>
+	</Tr>
+
+	<TR>
+		<th >11:40 A 12:35</th>
+		<td rowspan="2" >BASE DE DATOS</td>
+		<td rowspan="2" >SISTEMAS INFORMATICOS</td>
+		<td rowspan="3" >LENGUAJE DE MARCAS</td>
+		<td >LENGUAJE DE MARCAS</td>
+		<td >ENTORNOS DE DESARROLLO</td>
+	</tr>
+
+	<TR>
+		<th >12:35 A 1:30</th>
+		<td rowspan="2" >PROGRAMACION</td>
+		<td rowspan="2" >BASE DE DATOS</td>
+	</tr>
+
+	
+	<TR>
+		<th >1:30 A 2:25</th>
+		<td >SISTEMAS INFORMATICOS</td>
+		<td >ENTORNOS DE DESARROLLO</td>
+		
+	</tr>
+	
+	
+</table>
+</body>
+</html>

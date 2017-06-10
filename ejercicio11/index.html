@@ -1,0 +1,301 @@
+<html>
+<head><title>Ejercicio11</title>
+<meta charset="UTF-8"/>
+<style>
+
+@keyframes ColorEnMovimiento
+{
+0%   {color:00000;}
+50%  {color:66ff66; }
+100% {color:00000;}
+}
+
+@-webkit-keyframes ColorEnMovimient
+{
+0%   {color:00000;}
+50%  {color:66ff66;}
+100% {color:00000;}
+}
+
+@keyframes Raton
+{
+0%   {position:relative; left:0px; top: 0px; transform: rotate(90deg)}
+25%   {position:relative; left:0; top: -400px; ; transform: rotate(180deg) }
+50%   {position:relative; left:400px; top: -400px; transform: rotate(270deg) }
+75%   {position:relative; left:400px; top: 0px ; transform: rotate(0deg) }
+100%   {position:relative; left:0; top: 0 transform: rotate(90deg)}
+}
+
+@-webkit-keyframes Raton
+{
+0%   {position:relative; left:0px; top: 0px; -webkit-transform: rotate(90deg)}
+25%   {position:relative; left:0; top: -400px; ; -webkit-transform: rotate(180deg) }
+50%   {position:relative; left:400px; top: -400px; -webkit-transform: rotate(270deg) }
+75%   {position:relative; left:400px; top: 0px ; -webkit-transform: rotate(0deg) }
+100%   {position:relative; left:0; top: 0 -webkit-transform: rotate(90deg)}
+}
+
+
+@keyframes Vueloabeja
+{
+0%   {position:relative; left:350px; top: -50}
+10%   {position:relative; left:500px; top: -150px}
+20%   {position:relative; left:750px; top: -300px}
+30%   {position:relative; left:900px; top: -450px}
+40%   {position:relative; left:750px; top: -600px}
+50%   {position:relative; left:600px; top: -550px}
+60%   {position:relative; left:500px; top: -600px}
+70%   {position:relative; left:350px; top: -450px}
+80%   {position:relative; left:200px; top: -300px}
+90%   {position:relative; left:150px; top: -150px}
+100%   {position:relative; left:350px; top: -50px}
+}
+
+@-webkit-keyframes Vueloabeja
+{
+0%   {position:relative; left:350px; top: -50}
+10%   {position:relative; left:500px; top: -150px}
+20%   {position:relative; left:750px; top: -300px}
+30%   {position:relative; left:900px; top: -450px}
+40%   {position:relative; left:750px; top: -600px}
+50%   {position:relative; left:600px; top: -550px}
+60%   {position:relative; left:500px; top: -600px}
+70%   {position:relative; left:350px; top: -450px}
+80%   {position:relative; left:200px; top: -300px}
+90%   {position:relative; left:150px; top: -150px}
+100%   {position:relative; left:350px; top: -50px}
+}
+
+
+
+
+
+.recuadro
+{
+	margin: 15px auto 15px auto;
+	
+	border: 1px solid black;
+	width: 400px;
+	text-align:center;
+	border-radius:25px;
+  
+  
+}
+.pie
+{
+  font-style:italic;
+  text-decoration: underline;
+  color: dark-gray;
+}
+#r1 
+{
+	margin-top:35px;
+	transition: all 3s;
+	-webkit-transition: all 3s;
+	background: repeating-radial-gradient(circle, green, yellow 10px, green 20px);
+}	
+	
+#r1:hover
+{
+	background: repeating-radial-gradient(circle, green, green 10px, yellow 10px, yellow 20px); 
+
+	transform: scale(2,1.5);
+	-webkit-transform: scale(2,1.5);
+	border: 2px double red;
+	
+}
+
+#int {
+	background: black;
+	background-image: url('../img/umbrella.png');
+	background-repeat:norepeat;
+	background-position:center;
+	transition: transform 3s;
+	-webkit-transition: -webkit-transform 3s;
+	
+}
+/* solucion anterior
+	#int:hover {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}*/
+#ext{
+	 height:150px;
+	 border: 1px double red;
+	 -webkit-transform: rotate(180deg);
+}
+#ext:hover #int{
+	
+	
+	transform: rotate(180deg) ;
+	-webkit-transform: rotate(180deg);
+	
+}
+
+#ext2{
+	 height:150px;
+	 border: 1px double red;
+}
+#ext2:hover #int{
+	transform:rotate(360deg) scale(1.5,1.5) translate(100px,0px);
+	-webkit-transform:rotate(360deg) scale(1.5,1.5) translate(100px,0px);
+	border-color: red;
+	
+	border-radius: 40px;
+	box-shadow:10px 10px 5px gray;
+	
+}
+
+#r4
+{
+	background-image: url('../img/mat.jpg');
+	margin-top:35px;
+	transition: transform 3s, background-size 20s ;
+	-webkit-transition: -webkit-transform 3s, background-size 20s ;
+	-o-transition: -o-transform 3s, background-size 20s ;
+	background-size:10000px;
+	animation:ColorEnMovimiento linear infinite 4s;
+	-webkit-animation:ColorEnMovimient linear infinite 4s;
+	
+}
+
+#r4:hover
+{
+	
+	transform: scale(2,1.5);
+	-webkit-transform: scale(2,1.5);
+	transform: -ms-scale(2,1.5);
+	-o-transform: -o-scale(2,1.5);
+	background-size:15%;
+	border: 2px double color:66ff66;
+	
+}
+
+.animaciones{
+	border: 2px double ;
+	width: 200px;
+	height: 150px;
+	}
+	#raton
+{
+		animation: Raton linear infinite 20s;
+		-webkit-animation: Raton linear infinite 20s;
+		position:relative; left:35px; top: 20px;
+		transfor: scale:(0.25,0.25);
+		
+		
+		
+}
+
+
+#r5
+{
+	background-image: url('../img/agua.jpg');
+	
+	
+}
+
+
+
+#r5:hover{
+	background-image: url('../img/agua.jpg');
+    
+	animation: tiembla 1s infinite;
+	-webkit-animation: tiembla 1s infinite;
+	
+	
+	
+}
+@keyframes tiembla{
+    0%  { transform:rotateZ(0deg); }
+    25% { transform:rotateZ( -5deg) scale(.8); }
+	50%  { transform:rotateZ(0deg); }
+    75%{ transform:rotateZ( 5deg) scale(.8); }
+	100%  { transform:rotateZ(0deg); }
+}
+
+@-webkit-keyframes tiembla{
+    0%  { -webkit-transform:rotateZ(0deg); }
+    25% { -webkit-transform:rotateZ( -5deg) scale(.8); }
+	50%  { -webkit-transform:rotateZ(0deg); }
+    75%{ -webkit-transform:rotateZ( 5deg) scale(.8); }
+	100%  { -webkit-transform:rotateZ(0deg); }
+}
+
+#raton img{
+width: 100px;
+		height: 100px;
+
+}
+
+#abeja
+{
+		animation: Vueloabeja linear infinite 20s;
+		-webkit-animation: Vueloabeja linear infinite 20s;
+		position:relative; left:35px; top: 20px;*/
+		
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="recuadro" id="r1">
+	<h2>Lenguajes de Marcas</h2>
+	
+	<h2>Prueba 1</h2>
+</div>
+
+
+<div class="recuadro" id="ext">
+<div class="recuadro" id="int">
+	<h2>.</h2>
+	
+	<h2>.</h2>
+</div>
+</div>
+
+<div class="recuadro" id="ext2">
+<div class="recuadro" id="int">
+	<h2>.</h2>
+	
+	<h2>.</h2>
+</div>
+</div>
+
+
+<div class="recuadro" id="r4">
+	<h2>Lenguajes de Marcas</h2>
+	
+	<h2>Ejemplo 4</h2>
+</div>
+
+<div class="recuadro" id="r5">
+	<h2>Lenguajes de Marcas</h2>
+	
+	<h2>Ejemplo 5</h2>
+</div>
+
+<div class="animaciones" id="rueda">
+<div id="raton">
+			<img src="../img/rueda.gif"  />
+	
+</div>	
+</div>	
+<div class="animaciones" id="jaula">
+<div id="abeja">
+
+	<img src="../img/abeja.gif"  />
+	
+</div>	
+</div>	
+
+
+
+<br/>
+<br/>
+<p class="pie">Miguel Mingoarranz Perez, Yuriy Savochka</p> 
+<br/>
+</body>
+</html>

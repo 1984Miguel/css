@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Akronim';
+    src: url('fonts/Akronim-Regular.eot'); /* Para Internet Explorer */
+    src: local('Akronim'), /* Para el resto de navegadores */
+         url('fonts/Akronim-Regular.ttf') format('truetype'),
+         url('fonts/Akronim-Regular.woff') format('woff'),
+         url('fonts/Akronim-Regular.svg') format('svg')
+}
+	body{
+	background-image: url('../img/fon.JPG');
+	
+	  font-family: 'Akronim', cursive;
+		}
+	
+	*{opacity:.99 important!;}
+		
+		#cabecera{
+		-webkit-transform:rotate(3deg);
+		-moz-transform:rotate(3deg);
+		-webkit-transform:rotate(3deg);
+		text-align:center;
+		text-shadow: 5px 5px 5px #0000FF;
+		background-color:yellow;
+		
+		transform:rotate(3deg);
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 50px;
+		border-right-color:red;
+		border-top-color:blue;
+		border-left-color:green;
+		border-bottom-color:yellow;
+		border-style: groove;
+		border-width: .5em;
+	
+	
+		}
+		
+		
+		#cuerpo{
+		
+		background-image: url('../img/mat.JPG');
+		-webkit-transform:rotate(-2deg);
+		-moz-transform:rotate(-2deg);
+		-webkit-transform:rotate(-2deg);
+		border-style: double;
+		border-width: .5em;
+		-webkit-border-top-left-radius: 100px;
+		-webkit-border-top-right-radius: 10px;
+		-webkit-border-bottom-right-radius: 10px;
+		-webkit-border-bottom-left-radius: 25px;
+		-moz-border-radius-topleft: 100px;
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		-moz-border-radius-bottomleft: 25px;
+		border-top-left-radius: 100px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 25px;
+		border-right-color:olive;
+		border-top-color:blue;
+		border-left-color:purple;
+		border-bottom-color:yellow;
+		}
+		#cuerpo h1{
+		color:red;
+		 text-align:right;
+		 }
+		
+		
+		#pie{
+			color:green;
+			text-shadow: 5px 5px 5px #00FFFF;
+			text-align:right;
+			position:absolute;
+			top: 20px;
+		}
+		
+		
+	

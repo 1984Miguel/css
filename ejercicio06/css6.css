@@ -1,0 +1,34 @@
+	li.lis1{font-size:2cm;	} 
+	li.lis2{font-size:15mm;	} 
+	li.lis3{font-size:2em;	} 
+	li.lis4{font-size:14px;	} 
+	li.lis5{font-size:3ex;	} 
+
+	ul.des li.lis1{text-indent: 2em; letter-spacing:200%;}
+	ul.des li.lis2{text-indent: 2em; letter-spacing:200%;}
+	ul.des li.lis3{text-indent: 2em; letter-spacing:200%;}
+	ul.des li.lis4{text-indent: 2em; letter-spacing:200%;}
+	ul.des li.lis5{text-indent: 2em; letter-spacing:200%;}
+	
+	#div1 {font-size:16px;word-spacing;1.5 em;}
+	#div2{font-size:2em;word-spacing;2 em;}
+	#div3{font-size:150%;word-spacing;150%; }
+	
+	li.rojo{color:red;}
+	li.azul{color:blue;}
+	li.verde{color:green;}
+	li.oliva{color:olive;}
+	
+	li.rojoH{color:#ff0000;}
+	li.azulH{color:#0000ff;}
+	li.verdeH{color:#00ff00;}
+	
+	li.rojoR{color:RGB(255,0,0);}
+	li.azulB{color:RGB(0,0,255);}
+	li.verdeG{color:RGB(0,255,0);}
+	
+	li.rojoRp{color:RGB(100%,0,0);}
+	li.azulBp{color:RGB(0,0,100%);}
+	li.verdeGp{color:RGB(0,100%,0);}
+	
+	
